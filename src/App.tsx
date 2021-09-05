@@ -31,8 +31,13 @@ const App: React.FC = () => {
             });
     }, [windowDimensions]);
 
-    const handleSortButtonClicked = () => {
+    useEffect(() => {
         setArray(generateArray(arraySize));
+    }, [arraySize]);
+
+    const handleSortButtonClicked = () => {
+        // TODO: Implement Array Sorting
+        alert('Clicked Sort');
     };
 
     return (
@@ -50,13 +55,12 @@ const App: React.FC = () => {
                     onSortButtonClicked={handleSortButtonClicked}
                 />
                 <main
-                    className="ml-sidebar mt-header bg-accent-2 p-4 w-full flex"
+                    className="ml-sidebar mt-header bg-accent-2 p-4 w-full flex justify-center"
                     ref={mainRef}
                     style={{
                         gap: getGraphBarPixelWidth(mainDimensions.width, array),
                     }}
                 >
-                    <div className="ml-auto" />
                     {array.map((value, index) => {
                         console.log('Height', mainDimensions.height);
 
@@ -64,7 +68,7 @@ const App: React.FC = () => {
                         return (
                             <div
                                 key={index}
-                                className="bg-accent-10 mt-auto"
+                                className={'bg-accent-10 mt-auto '}
                                 style={{
                                     minHeight: getGraphBarPixelHeight(mainDimensions.height, array) * value,
                                     maxHeight: getGraphBarPixelHeight(mainDimensions.height, array) * value,
@@ -74,7 +78,6 @@ const App: React.FC = () => {
                             />
                         );
                     })}
-                    <div className="mr-auto" />
                 </main>
             </div>
         </>
