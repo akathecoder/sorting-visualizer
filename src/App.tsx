@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 const App: React.FC = () => {
     return (
@@ -9,23 +10,7 @@ const App: React.FC = () => {
             </header>
 
             <div className="flex">
-                <nav className="h-full w-sidebar fixed z-10 left-0 top-header bg-black overflow-hidden p-5 text-white">
-                    <a href="" className="block text-2xl">
-                        About
-                    </a>
-                    <a href="" className="block text-2xl">
-                        About
-                    </a>
-                    <a href="" className="block text-2xl">
-                        About
-                    </a>
-                    <a href="" className="block text-2xl">
-                        About
-                    </a>
-                    <a href="" className="block text-2xl">
-                        About
-                    </a>
-                </nav>
+                <Sidebar />
 
                 <main className="ml-sidebar mt-header bg-blue-900">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus eos id animi nesciunt maiores
