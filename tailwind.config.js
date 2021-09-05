@@ -13,7 +13,21 @@ module.exports = {
                 primary: '#d527b7',
                 primaryLight: '#f782c2',
                 secondary: '#f9c46b',
-                accent: '#e3e3e3',
+                accent: {
+                    1: '#fafafa',
+                    2: '#f2f2f2',
+                    3: '#e6e6e6',
+                    4: '#d9d9d9',
+                    5: '#cccccc',
+                    6: '#bfbfbf',
+                    7: '#b3b3b3',
+                    8: '#a6a6a6',
+                    9: '#999999',
+                    10: '#8c8c8c',
+
+                    // 1: '#e3e3e3',
+                    // 2: '#bfbfbf',
+                },
             },
             height: {
                 header: constants.header,
