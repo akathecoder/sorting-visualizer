@@ -5,7 +5,7 @@ import SortingAlgorithm from './SortingAlgorithm';
 
 const Sidebar: React.FC = () => {
     return (
-        <nav className="h-full w-sidebar fixed z-10 left-0 top-header bg-accent-8 overflow-hidden p-5">
+        <nav className="h-full w-sidebar fixed z-10 left-0 top-header bg-accent-8 overflow-hidden p-5 flex flex-col gap-7">
             <ArraySize />
             <SortingAlgorithm />
             <SortButton />
