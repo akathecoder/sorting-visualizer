@@ -1,4 +1,4 @@
-export const generateArray = (size: number, min = 1, max = 100): Array<number> => {
+export const generateArray = (size: number, min = 2, max = 100): Array<number> => {
     const arr: Array<number> = [];
 
     for (let index = 0; index < size; index++) {
