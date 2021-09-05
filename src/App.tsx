@@ -62,9 +62,6 @@ const App: React.FC = () => {
                     }}
                 >
                     {array.map((value, index) => {
-                        console.log('Height', mainDimensions.height);
-
-                        console.log(getGraphBarPixelHeight(mainDimensions.height, array) * value);
                         return (
                             <div
                                 key={index}

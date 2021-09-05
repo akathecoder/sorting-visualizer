@@ -16,9 +16,6 @@ export const getGraphBarPixelHeight = (availHeight: number, array: Array<number>
         }
     });
 
-    // console.log('availHeight', availHeight);
-    // console.log('maxArrayValue', maxArrayValue);
-
     return availHeight / maxArrayValue;
 };
 
